@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/React_Login_ToDo_API/static/css/main.ea1455b2.chunk.css",
-    "main.js": "/React_Login_ToDo_API/static/js/main.826da6d9.chunk.js",
-    "main.js.map": "/React_Login_ToDo_API/static/js/main.826da6d9.chunk.js.map",
+    "main.js": "/React_Login_ToDo_API/static/js/main.86cf5ed6.chunk.js",
+    "main.js.map": "/React_Login_ToDo_API/static/js/main.86cf5ed6.chunk.js.map",
     "runtime-main.js": "/React_Login_ToDo_API/static/js/runtime-main.26b86c8f.js",
     "runtime-main.js.map": "/React_Login_ToDo_API/static/js/runtime-main.26b86c8f.js.map",
     "static/css/2.cd53ada2.chunk.css": "/React_Login_ToDo_API/static/css/2.cd53ada2.chunk.css",
@@ -23,6 +23,6 @@
     "static/css/2.cd53ada2.chunk.css",
     "static/js/2.cfac655e.chunk.js",
     "static/css/main.ea1455b2.chunk.css",
-    "static/js/main.826da6d9.chunk.js"
+    "static/js/main.86cf5ed6.chunk.js"
   ]
 }
