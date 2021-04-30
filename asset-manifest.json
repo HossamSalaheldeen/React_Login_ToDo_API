@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/React_Login_ToDo_API/static/css/main.ea1455b2.chunk.css",
-    "main.js": "/React_Login_ToDo_API/static/js/main.ac562d96.chunk.js",
-    "main.js.map": "/React_Login_ToDo_API/static/js/main.ac562d96.chunk.js.map",
+    "main.js": "/React_Login_ToDo_API/static/js/main.1b746a54.chunk.js",
+    "main.js.map": "/React_Login_ToDo_API/static/js/main.1b746a54.chunk.js.map",
     "runtime-main.js": "/React_Login_ToDo_API/static/js/runtime-main.26b86c8f.js",
     "runtime-main.js.map": "/React_Login_ToDo_API/static/js/runtime-main.26b86c8f.js.map",
     "static/css/2.cd53ada2.chunk.css": "/React_Login_ToDo_API/static/css/2.cd53ada2.chunk.css",
-    "static/js/2.4cb7a37d.chunk.js": "/React_Login_ToDo_API/static/js/2.4cb7a37d.chunk.js",
-    "static/js/2.4cb7a37d.chunk.js.map": "/React_Login_ToDo_API/static/js/2.4cb7a37d.chunk.js.map",
+    "static/js/2.cef428c3.chunk.js": "/React_Login_ToDo_API/static/js/2.cef428c3.chunk.js",
+    "static/js/2.cef428c3.chunk.js.map": "/React_Login_ToDo_API/static/js/2.cef428c3.chunk.js.map",
     "static/js/3.d6b6f357.chunk.js": "/React_Login_ToDo_API/static/js/3.d6b6f357.chunk.js",
     "static/js/3.d6b6f357.chunk.js.map": "/React_Login_ToDo_API/static/js/3.d6b6f357.chunk.js.map",
     "index.html": "/React_Login_ToDo_API/index.html",
     "static/css/2.cd53ada2.chunk.css.map": "/React_Login_ToDo_API/static/css/2.cd53ada2.chunk.css.map",
     "static/css/main.ea1455b2.chunk.css.map": "/React_Login_ToDo_API/static/css/main.ea1455b2.chunk.css.map",
-    "static/js/2.4cb7a37d.chunk.js.LICENSE.txt": "/React_Login_ToDo_API/static/js/2.4cb7a37d.chunk.js.LICENSE.txt",
+    "static/js/2.cef428c3.chunk.js.LICENSE.txt": "/React_Login_ToDo_API/static/js/2.cef428c3.chunk.js.LICENSE.txt",
     "static/media/all.min.css": "/React_Login_ToDo_API/static/media/fa-solid-900.efbd5d20.eot",
     "static/media/loading.b5f9ca4c.gif": "/React_Login_ToDo_API/static/media/loading.b5f9ca4c.gif",
     "static/media/logo.6ce24c58.svg": "/React_Login_ToDo_API/static/media/logo.6ce24c58.svg"
@@ -21,8 +21,8 @@
   "entrypoints": [
     "static/js/runtime-main.26b86c8f.js",
     "static/css/2.cd53ada2.chunk.css",
-    "static/js/2.4cb7a37d.chunk.js",
+    "static/js/2.cef428c3.chunk.js",
     "static/css/main.ea1455b2.chunk.css",
-    "static/js/main.ac562d96.chunk.js"
+    "static/js/main.1b746a54.chunk.js"
   ]
 }
