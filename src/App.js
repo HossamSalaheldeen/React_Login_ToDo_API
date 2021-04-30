@@ -1,25 +1,77 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ToDoList from "./ToDoList";
+import Home from "./Home";
+import Dashboard from "./Dashboard";
+import NotFound from "./NotFound";
+import { BrowserRouter } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
+class App extends React.Component {
+  constructor() {
+    super();
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    this.state = {
+      loggedInStatus: "NOT_LOGGED_IN",
+    };
+  }
+
+  componentDidMount() {
+    if (localStorage["loggedInStatus"]) {
+      let loggedInStatus = localStorage.getItem("loggedInStatus");
+      this.setState({ loggedInStatus: loggedInStatus });
+    }
+  }
+
+  handleLogin = (data) => {
+    this.setState({
+      loggedInStatus: data,
+    });
+    this.saveToLocalStorage(data);
+  };
+
+  handleLogout = (data) => {
+    this.setState({
+      loggedInStatus: data,
+    });
+    this.saveToLocalStorage(data);
+  };
+
+  saveToLocalStorage = (data) => {
+    localStorage.setItem("loggedInStatus", data);
+  };
+
+  render() {
+    return (
+      <BrowserRouter>
+        {/* <ToDoList/> <ToDoList/> */}
+        <Switch>
+          <Route
+            path="/"
+            exact
+            render={(props) => (
+              <Home
+                handleLogin={this.handleLogin}
+                loggedInStatus={this.state.loggedInStatus}
+                {...props}
+              />
+            )}
+          />
+          {this.state.loggedInStatus === "LOGGED_IN"  &&(
+            <Route
+              path="/dashboard"
+              render={(props) => (
+                <Dashboard
+                  handleLogout={this.handleLogout}
+                  loggedInStatus={this.state.loggedInStatus}
+                  {...props}
+                />
+              )}
+            />
+          )}
+          <Route component={NotFound} />
+        </Switch>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;
