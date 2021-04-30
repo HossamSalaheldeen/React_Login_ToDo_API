@@ -45,7 +45,7 @@ class App extends React.Component {
         {/* <ToDoList/> <ToDoList/> */}
         <Switch>
           <Route
-            path="/"
+            path="/home"
             exact
             render={(props) => (
               <Home
@@ -55,7 +55,7 @@ class App extends React.Component {
               />
             )}
           />
-          {this.state.loggedInStatus === "LOGGED_IN"  &&(
+          {localStorage.getItem("loggedInStatus") === "LOGGED_IN"  &&(
             <Route
               path="/dashboard"
               render={(props) => (
@@ -67,7 +67,11 @@ class App extends React.Component {
               )}
             />
           )}
-          <Route component={NotFound} />
+          <Route path="/notfound" component={NotFound} />
+          
+          <Redirect to="/home" />
+          
+          
         </Switch>
       </BrowserRouter>
     );
